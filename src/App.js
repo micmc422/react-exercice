@@ -1,16 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
-import HeroSection from './components/heroHeader';
-import Parent from './components/parent';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import HomePage from "./homePage";
+import Page404 from "./404";
+import ListeArticles from "./blog";
+import MenuNavigation from "./components/navBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <HeroSection title="Exercice React" description="Présentation des fondamentaux React." />
-        <Parent className="bg-black" />
-        <img src={logo} className="App-logo" alt="logo" />
+        <MenuNavigation />
       </header>
+
+      <Router>
+        <Routes>
+          <Route index element={<HomePage />} />
+          <Route path="blog" element={<ListeArticles />} />
+          <Route path="*" element={<Page404 />} />
+        </Routes>
+      </Router>
     </div>
   );
 }
