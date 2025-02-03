@@ -1,10 +1,13 @@
 import React from "react";
+import HomePage from "../homePage";
+import ListeArticles from "../blog";
+import FormulaireContact from "./formulaire";
 
 // Données du menu
-const menuItems = [
-    { id: 1, label: "Accueil", url: "/" },
-    { id: 2, label: "Blog", url: "/blog" },
-    { id: 3, label: "error", url: "/err" },
+export const menuItems = [
+    { id: 1, label: "Accueil", url: "/", component: <HomePage /> },
+    { id: 2, label: "Blog", url: "/blog", component: <ListeArticles /> },
+    { id: 3, label: "error", url: "/formulaire", component: <FormulaireContact /> },
     // { id: 4, label: "Contact", url: "/contact" },
 ];
 
