@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Exercices React
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Exercice 1 : Compteur de clics
 
-## Available Scripts
+- Créez un composant `Compteur` avec un état local `compteur`.
+- Affichez la valeur et un bouton pour l'incrémenter.
+- Expérimentez avec `setCompteur(prev => prev + 1)`.
 
-In the project directory, you can run:
+Exercice 2 : Transmission de données entre composants
 
-### `npm start`
+- Implémentez un `Parent` et un `Enfant`.
+- Transmettez des données via `props` et utilisez `children`.
+- Ajoutez une fonction de rappel (`callback`) pour remonter une action à `Parent`.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Exercice 3 : Page 404
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- Créez un composant `Page404` affichant un message d'erreur.
+- Ajoutez un lien de retour à l'accueil.
 
-### `npm test`
+Exercice 4 : Liste d'articles de blog
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Déclarez un tableau d'objets représentant des articles.
+- Affichez dynamiquement les articles avec `.map()`.
 
-### `npm run build`
+Exercice 5 : Menu de navigation
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Implémentez une `NavBar` avec une liste de liens.
+- Expérimentez avec les styles et le responsive design.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Exercice 6 : Formulaire de contact
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Créez un formulaire avec des champs `nom`, `email`, `message`.
+- Gérez l'état avec `useState`.
+- Ajoutez une validation simple avant soumission.
 
-### `npm run eject`
+Exercice 7 : Contexte React (thème clair/sombre)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Utilisez `ThemeContext` pour gérer un état global.
+- Expérimentez avec `useContext` et un bouton pour basculer le thème.
